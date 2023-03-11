@@ -1,17 +1,18 @@
 package pl.javastart.task;
 
-public class RyczaltEwidencjonowany extends FormaOpodatkowania {
+public class Liniowy extends FormaOpodatkowania {
 
-    public RyczaltEwidencjonowany() {
+    public Liniowy() {
     }
 
     @Override
     public double wyliczPodatek(double przychody, double wydatki) {
-        return przychody * 0.15;
+        double dochod = przychody - wydatki;
+        return dochod * 0.19;
     }
 
     @Override
     public String formaOpodatkowania() {
-        return "ryczałt ewidencjonowany";
+        return "podatek liniowy";
     }
 }
