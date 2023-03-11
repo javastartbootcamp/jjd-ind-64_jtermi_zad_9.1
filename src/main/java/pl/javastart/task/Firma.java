@@ -1,5 +1,7 @@
 package pl.javastart.task;
 
+import pl.javastart.task.opodatkowanie.FormaOpodatkowania;
+
 import java.util.Arrays;
 
 public class Firma {
